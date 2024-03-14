@@ -1,0 +1,228 @@
+GAME_INFO:"Clock Aberration";16;"assets/final/textures/item_sheet.png";"assets/final/textures/inventory_item_sheet.png";"assets/final/textures/background.png";"assets/final/fonts/dogica.fnt";0x0d050dff
+ROOM_INFO:"StartingRoomFront";"assets/final/textures/room.png";4;"^"
+  ITEM:0;0;0;0;0;140;240;20;1;0
+    ITEM_ACTION:MOVE_ROOM;1
+  ITEM:0;0;0;0;138;55;30;60;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+  ITEM:0;0;0;0;138;55;30;60;5;0
+    ITEM_ACTION:MESSAGE;"It's locked.^^There must be^a key here^somewhere^"
+    ITEM_ACTION:REQUIRE_HELD_ITEM;1
+    ITEM_ACTION:REMOVE_INV_ITEM;1
+	ITEM_ACTION:MESSAGE;"It unlocked^..."
+    ITEM_ACTION:DEACTIVATE_SELF;
+  ITEM:0;189;31;16;75;100;31;16;5;0
+    ITEM_ACTION:MESSAGE;"A lit fire-^place.^^Fire can^rekindle that^which has^faded away.";
+    ITEM_ACTION:REQUIRE_HELD_ITEM;2
+    ITEM_ACTION:REMOVE_INV_ITEM;2
+    ITEM_ACTION:MESSAGE;"The words^suddenly^become clear.^^'When you are^ready, go to^the abandoned^factory down^the street'^^As the fire^burns the rest^of the letter,^only a small^piece remains,^with a code^written in it.";
+    ITEM_ACTION:ADD_INV_ITEM;3
+ROOM_INFO:"StartingRoomBack";"assets/final/textures/room2.png";5;"^"
+  ITEM:24;0;3;6;204;126;3;6;4;1
+    ITEM_ACTION:MESSAGE;"It's a key.^^You wonder if^it opens the^front door.^"
+    ITEM_ACTION:ADD_INV_ITEM;1
+    ITEM_ACTION:DEACTIVATE_SELF;
+    ITEM_ACTION:HIDE;
+  ITEM:0;0;0;0;0;140;240;20;1;0
+    ITEM_ACTION:MOVE_ROOM;0
+  ITEM:0;36;89;27;78;52;89;27;1;0
+    ITEM_ACTION:MOVE_ROOM;2
+  ITEM:0;63;92;31;16;103;63;31;1;0
+    ITEM_ACTION:MESSAGE;"Someone has^been sleeping^here recently^^^Maybe you?"
+  ITEM:0;212;18;18;195;64;18;18;4;0
+    ITEM_ACTION:MESSAGE;"A clock.^^Its hands are^standing still.^^As you touch^it, something^seems to^fall out."
+    ITEM_ACTION:ACTIVATE_ITEM;1;0
+    ITEM_ACTION:SHOW_ITEM;1;0
+    ITEM_ACTION:DEACTIVATE_SELF;
+ROOM_INFO:"LookingOutWindow";"assets/final/textures/tree.png";2;"You look out^the window.^^Although you^cannot feel^the air, you^still get the^sensation of^immense cold."
+  ITEM:0;125;25;8;57;11;25;8;1;0
+    ITEM_ACTION:MOVE_ROOM;3
+  ITEM:0;0;0;0;0;120;240;40;1;0
+    ITEM_ACTION:MOVE_ROOM;1
+ROOM_INFO:"LookingAtBirds";"assets/final/textures/birds.png";1;"Looking close-^ly at the^birds outside,^you notice:^^They are^standing^perfectly^still"
+  ITEM:0;0;0;0;0;120;240;40;1;0
+    ITEM_ACTION:MOVE_ROOM;2
+ROOM_INFO:"StandingOutside";"assets/final/textures/room3.png";7;"You step out-^side.^^You feel cold^shivers down^your spine.^^The leaves on^the road seem^to be unmoving.^"
+  ITEM:0;134;14;24;166;90;14;24;1;0
+    ITEM_ACTION:MOVE_ROOM;5
+  ITEM:0;158;30;5;96;152;30;5;1;0
+    ITEM_ACTION:MOVE_ROOM;0
+  ITEM:0;163;12;26;100;109;12;26;3;0
+    ITEM_ACTION:ADD_INV_ITEM;2
+    ITEM_ACTION:MESSAGE;"A letter.^It is ^addressed to^you.^^The words are^faded away.^You fail to^read them."
+    ITEM_ACTION:DEACTIVATE_SELF;
+  ITEM:0;0;0;0;0;88;32;40;1;0
+    ITEM_ACTION:MOVE_ROOM;6
+  ITEM:0;0;0;0;125;70;16;20;1;0
+    ITEM_ACTION:MOVE_ROOM;7
+  ITEM:0;0;0;0;1;67;26;22;1;0
+    ITEM_ACTION:MOVE_ROOM;9
+  ITEM:0;0;0;0;52;64;16;26;1;0
+    ITEM_ACTION:MOVE_ROOM;11
+ROOM_INFO:"Creature";"assets/final/textures/creature.png";4;"^"
+  ITEM:0;0;0;0;0;0;240;140;28;0
+    ITEM_ACTION:MESSAGE;"It is not^time yet."
+    ITEM_ACTION:REQUIRE_INV_ITEM;16
+    ITEM_ACTION:MESSAGE;"So you are^starting to^remember."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Do you^remember our^deal yet?."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"One more year.^One life."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"And now,^here we are."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"No more life^to be found."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Except,^of course."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Yours."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Give it to me.^^^You have no^choice."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"I will even^offer you a^better deal."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Do it and all^you have done^will be erased.^^Everything will^go back as^it was before^you called to^me."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:ACTIVATE_ITEM;5;1
+    ITEM_ACTION:ACTIVATE_ITEM;5;2
+    ITEM_ACTION:ACTIVATE_ITEM;5;3
+    ITEM_ACTION:SHOW_ITEM;5;1
+    ITEM_ACTION:SHOW_ITEM;5;2
+    ITEM_ACTION:DEACTIVATE_SELF;
+  ITEM:143;9;100;18;16;16;100;18;1;1
+    ITEM_ACTION:MOVE_ROOM;14
+  ITEM:143;30;100;20;16;36;100;20;1;1
+    ITEM_ACTION:MOVE_ROOM;15
+  ITEM:0;0;0;0;0;140;240;20;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+ROOM_INFO:"Sunset";"assets/final/textures/sunset.png";1;"As you look^towards the^city, you see^an eternal^sunset.^^There is^nothing for^you over there."
+  ITEM:0;0;0;0;0;0;240;160;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+ROOM_INFO:"FactoryEntrance";"assets/final/textures/room4.png";4;"As you get^near the^factory, you^feel a sense^of dread wash^over you."
+  ITEM:0;0;0;0;36;124;56;37;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+  ITEM:0;0;0;0;52;87;27;37;1;0
+    ITEM_ACTION:MOVE_ROOM;8
+  ITEM:0;0;0;0;52;87;27;37;1;0
+    ITEM_ACTION:MESSAGE;"The door is^locked shut."
+  ITEM:0;205;5;7;81;99;5;7;5;0
+    ITEM_ACTION:MESSAGE;"By the door,^sits a keypad.^^A red light^blinks. It is^waiting for^you to input^the code."
+    ITEM_ACTION:REQUIRE_HELD_ITEM;3
+    ITEM_ACTION:MESSAGE;"You input the^code.^^The door seems^to be open^^^Somehow, the^sensation of^dread only^intensifies."
+    ITEM_ACTION:DEACTIVATE_SELF;
+    ITEM_ACTION:DEACTIVATE_ITEM;7;2
+ROOM_INFO:"FactoryReception";"assets/final/textures/room5.png";6;"^"
+  ITEM:181;233;11;23;8;128;11;23;1;0
+    ITEM_ACTION:MOVE_ROOM;7
+  ITEM:0;230;48;25;47;108;48;25;4;0
+    ITEM_ACTION:MESSAGE;"A reception^desk.^^Looking^inside the^drawer, you^find a key."
+    ITEM_ACTION:ADD_INV_ITEM;1
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"The drawer is^empty now."
+  ITEM:47;233;46;23;144;80;46;23;10;0
+    ITEM_ACTION:MESSAGE;"Do you^remember why^you are here^yet?"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Atonement?^Judgement?^Punishment?^"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"...No?^Nothing yet?"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Well then.^^Take this.^^Maybe it^will help^you remember."
+    ITEM_ACTION:ADD_INV_ITEM;4
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Just try to^remember."
+  ITEM:91;222;65;32;166;122;65;32;4;0
+    ITEM_ACTION:MESSAGE;"A pulsating^red mass.^"
+    ITEM_ACTION:REQUIRE_HELD_ITEM;5
+    ITEM_ACTION:MESSAGE;"You cut the^flesh-like^substance open^with your^knife.^^Inside the mass^you find a^pair of lungs"
+    ITEM_ACTION:ADD_INV_ITEM;9
+  ITEM:158;235;22;21;68;137;22;21;1;0
+    ITEM_ACTION:MESSAGE;"It's a news-^paper.^^The date on^the front page^feels awfully^familiar.^^As if you^have seen it^many times^already."
+  ITEM:0;0;0;0;212;64;26;16;1;0
+    ITEM_ACTION:MOVE_ROOM;13
+ROOM_INFO:"StandingInFrontOfHouse";"assets/final/textures/room6.png";2;"^"
+  ITEM:0;0;0;0;106;85;38;30;6;0
+    ITEM_ACTION:MESSAGE;"The front door.^It is locked^"
+    ITEM_ACTION:REQUIRE_HELD_ITEM;1
+    ITEM_ACTION:REMOVE_INV_ITEM;1
+    ITEM_ACTION:MESSAGE;"It is open."
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MOVE_ROOM;10
+  ITEM:0;0;0;0;91;124;56;36;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+ROOM_INFO:"House";"assets/final/textures/room7.png";4;"^"
+  ITEM:0;0;0;0;136;56;31;60;1;0
+    ITEM_ACTION:MOVE_ROOM;9
+  ITEM:193;251;15;5;43;108;15;5;4;0
+    ITEM_ACTION:DEACTIVATE_SELF;
+    ITEM_ACTION:HIDE;
+    ITEM_ACTION:MESSAGE;"A knife.^^It looks^sharp"
+    ITEM_ACTION:ADD_INV_ITEM;5
+  ITEM:244;220;13;36;203;90;13;36;4;0
+    ITEM_ACTION:DEACTIVATE_SELF;
+    ITEM_ACTION:HIDE;
+    ITEM_ACTION:MESSAGE;"A crowbar.^^It might come^in handy"
+    ITEM_ACTION:ADD_INV_ITEM;6
+  ITEM:194;235;48;14;187;44;48;14;8;0
+    ITEM_ACTION:MESSAGE;"Do you^remember who^you are yet?"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"...No?^Nothing yet?"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Well then.^^Take this.^^Maybe it^will help^you remember."
+    ITEM_ACTION:ADD_INV_ITEM;7
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Just try to^remember."
+ROOM_INFO:"StandingInFrontOfWarehouse";"assets/final/textures/room9.png";3;"^"
+  ITEM:0;0;0;0;106;85;38;30;1;1
+    ITEM_ACTION:MOVE_ROOM;12
+  ITEM:213;197;41;22;100;90;41;22;7;0
+    ITEM_ACTION:MESSAGE;"The front door.^It is boarded^shut"
+    ITEM_ACTION:REQUIRE_HELD_ITEM;6
+    ITEM_ACTION:REMOVE_INV_ITEM;6
+    ITEM_ACTION:MESSAGE;"You manage to^pry it^open, but^your crowbar^breaks in the^process."
+    ITEM_ACTION:HIDE;
+    ITEM_ACTION:DEACTIVATE_SELF;
+    ITEM_ACTION:ACTIVATE_ITEM;11;0
+  ITEM:0;0;0;0;91;124;56;36;1;0
+    ITEM_ACTION:MOVE_ROOM;4
+ROOM_INFO:"CorpseRoom";"assets/final/textures/room8.png";2;"As you open^the doors, the^smell of death^quickly^overwhelms^you."
+  ITEM:0;0;0;0;0;140;240;20;1;0
+    ITEM_ACTION:MOVE_ROOM;11
+  ITEM:235;155;21;37;86;84;21;37;8;0
+    ITEM_ACTION:MESSAGE;"Do you^remember what^you did yet?";
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"...No?^Nothing yet?"
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Well then.^^Take this.^^Maybe it^will help^you remember.";
+    ITEM_ACTION:ADD_INV_ITEM;8
+    ITEM_ACTION:BREAK;
+    ITEM_ACTION:MESSAGE;"Just try to^remember.";
+ROOM_INFO:"FurnaceRoom";"assets/final/textures/room10.png";2;"Further into^the factory,^you approach^an industrial^furnace.^^The heat^should be^unbearable.^^And yet you^do not feel^it."
+  ITEM:0;0;0;0;0;0;240;120;25;0
+    ITEM_ACTION:MESSAGE;"An industrial^furnace^deep in the^factory.^^Its heat^should be^unbearable^yet you do^not feel it"
+    ITEM_ACTION:REQUIRE_INV_ITEM;4
+    ITEM_ACTION:REQUIRE_INV_ITEM;7
+    ITEM_ACTION:REQUIRE_INV_ITEM;8
+    ITEM_ACTION:REQUIRE_INV_ITEM;9
+    ITEM_ACTION:REMOVE_INV_ITEM;1
+    ITEM_ACTION:REMOVE_INV_ITEM;2
+    ITEM_ACTION:REMOVE_INV_ITEM;3
+    ITEM_ACTION:REMOVE_INV_ITEM;4
+    ITEM_ACTION:REMOVE_INV_ITEM;5
+    ITEM_ACTION:REMOVE_INV_ITEM;7
+    ITEM_ACTION:REMOVE_INV_ITEM;6
+    ITEM_ACTION:REMOVE_INV_ITEM;8
+    ITEM_ACTION:REMOVE_INV_ITEM;9
+    ITEM_ACTION:MESSAGE;"You burn the^human fragments^in the fire.^^As you do so,^you start to^feel your^memories^returning.^^^^It is time."
+    ITEM_ACTION:ADD_INV_ITEM;10
+    ITEM_ACTION:ADD_INV_ITEM;11
+    ITEM_ACTION:ADD_INV_ITEM;12
+    ITEM_ACTION:ADD_INV_ITEM;13
+    ITEM_ACTION:ADD_INV_ITEM;14
+    ITEM_ACTION:ADD_INV_ITEM;15
+    ITEM_ACTION:ADD_INV_ITEM;16
+    ITEM_ACTION:ADD_INV_ITEM;17
+    ITEM_ACTION:ADD_INV_ITEM;18
+    ITEM_ACTION:ADD_INV_ITEM;19
+  ITEM:0;0;0;0;0;140;240;20;1;0
+    ITEM_ACTION:MOVE_ROOM;8
+ROOM_INFO:"End1";"assets/final/textures/end.png";0;"You give^yourself to^the demon.^^The clocks turn^back one last^time.^^All those who^were erased by^the deal have^returned.^^Except, you,^of course."
+ROOM_INFO:"End2";"assets/final/textures/end.png";0;"You refuse.^The demon,^begrudgingly,^disappears.^^Time will never^move again,^and you are^left alone in^an empty world."
